@@ -131,3 +131,11 @@ a {
 a:hover {
     color: white;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .form {
+        flex-flow: nowrap;
+        align-items: center;
+    }
+}
