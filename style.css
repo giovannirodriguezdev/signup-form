@@ -1,154 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-:root {
-    --txt: #e5e5e5;
-    --background-color: #1a1a1a;
-    --highlight-color: #fca311;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Hevetica, sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    color: var(--txt);
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2d2b3d;
 }
 
 .container {
     display: flex;
+    width: 900px;
+    background: #1e1c2a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.container > * {
-    width: 50%;
-    padding: 1rem;
-    height: 100vh;
-}
-
+/* Left side */
 .left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(images/bbq.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img {
-    display: flex;
-    background-color: rgba(0, 0, 0, .6);
-    width: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #1a1a1a;
-    padding: 0;
-    margin: 0;
-    height: inherit;
-}
-
-.top {
-    display: flex;
+    width: 45%;
+    padding: 20px;
+    background: #23212e;
     text-align: center;
-    flex-direction: column;
-    background-color: #272727;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.bg-image {
+    margin-top: 20px;
+}
+
+.bg-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Right side */
+.right {
+    width: 55%;
+    padding: 30px;
+    background: #2d2b3d;
+    color: white;
 }
 
 h2 {
-    font-size: 1.3rem;
-    padding: 30px 50px 0 50px;
-    margin: 0;
-}
-
-.second-header {
-    padding-top: 4px;
-    margin: 0;
-}
-
-h3 {
-    padding: 0px 50px;
-}
-
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-.form-title {
-    width: 100%;
-    text-align: center;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.input {
-    display: flex;
-    flex-flow: column wrap;
-    width: 40%;
-    font-size: .7rem;
-    text-transform: uppercase;
-
-}
-
-input {
-    border: 1px solid rgb(77, 77, 77);
-    border-radius: 3px;
-}
-
-input:focus {
-    outline: none;
-    border: 2px solid black;
-}
-
-button {
-    font-weight: 700;
-    font-size: 1em;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px 30px;
-    margin: 40px 0;
-}
-
-button:hover {
-    background-color: grey;
-    color: white;
-}
-
-.log-in {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding-left: 20px;
-    font-size: 1.3em;
-}
-
-.log-in a {
-    color: salmon;
+    margin-bottom: 5px;
 }
 
 a {
+    color: #a58bff;
     text-decoration: none;
-    font-weight: 700;
 }
 
-a:hover {
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #3b394e;
     color: white;
 }
 
+.password-field {
+    position: relative;
+}
 
-@media only screen and (max-width: 600px) {
-    .form {
-        flex-flow: nowrap;
-        align-items: center;
-    }
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.create-account {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #a58bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-account:hover {
+    background: #9376ff;
+}
+
+/* Social Login */
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.google-btn, .apple-btn {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.google-btn {
+    background: white;
+    color: black;
+}
+
+.apple-btn {
+    background: black;
+    color: white;
 }

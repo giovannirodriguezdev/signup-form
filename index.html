@@ -4,60 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
+
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
 </head>
 <body>
+    
     <div class="container">
         <div class="left">
-            <div class="img">
-                <img src="images/couchon-logo.png" width="300px" alt="">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/couchon-logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="bg-image">
+                <img src="images/bbq.jpeg" alt="bbq background">
             </div>
         </div>
+
         <div class="right">
-            <div class="top">
-                <h2>Indulge in BBQ Bliss: Sign Up for the Ultimate BBQ Event in Napa Valley, Featuring America's Finest BBQ Chefs!</h2>
-                <br>
-                <h2 class="second-header">Sign up now to gain early access</h2>
-                <h3>You know you want to</h3>
-            </div>
-            <div class="middle">
-                <form action="">
-                    <div class="form">
-                        <p class="form-title">Let's do this!</p>
-                        <div class="input">
-                            <label for="first-name">First name</label>
-                            <input type="text" name="first-name" id="first-name" required>
-                        </div>
-                        <div class="input">
-                            <label for="last-name">Last name</label>
-                            <input type="text" name="last-name" id="last-name">
-                        </div>
-                        <div class="input">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" required>
-                        </div>
-                        <div class="input">
-                            <label for="phone-number">Phone Number</label>
-                            <input type="text" name="phone-number" id="phone-number" minlength="9" maxlength="9">
-                        </div>
-                        <div class="input">
-                            <label for="password">Password</label>
-                            <input type="password" name="passwor" id="passwor" required>
-                        </div>
-                        <div class="input">
-                            <label for="confirm-password">Confirm password</label>
-                            <input type="password" name="confirm-password" id="confirm-password" required>
-                        </div>
-                        <div class="button">
-                            <button type="submit">Create Account</button>
-                        </div>
-                    </div>
-                </form>
-                <div class="log-in">
-                    <p>Already have an account?</p><a href="#">Log in</a>
+            <h2>Create an account</h2>
+            <p>Already have an account? <a href="#">Log in</a></p>
+
+            <form action="" id="signup-form">
+                <div class="input-group">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
                 </div>
+                <input type="email" placeholder="Email" required>
+                <div class="password-field">
+                    <input type="password" placeholder="Enter a password" id="password" required>
+                    <span class="toggle-password">👁</span>
+                </div>
+                <label for="" class="checkbox">
+                    <input type="checkbox" required> I agree to the <a href="#">Terms & Conditions</a>
+                </label>
+                <button type="submit" class="create-account">Create account</button>
+            </form>
+
+            <p>Or register with</p>
+            <div class="social-login">
+                <button class="google-btn">Google</button>
+                <button class="apple-btn">Apple</button>
             </div>
         </div>
     </div>
+
 </body>
 </html>
