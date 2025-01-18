@@ -5,7 +5,7 @@
 
 A modern and responsive **Signup Form** built using **HTML, CSS, and JavaScript**. This project features a sleek, dark-themed UI with validation, password toggle functionality, and social login buttons.
 
-![Signup Form Preview](https://github.com/giovannirodriguezdev/signup-form/blob/main/preview.png)
+![Signup Form Preview](https://giovannirodriguezdev.github.io/signup-form/)
 
 ## 🔥 Features
 
