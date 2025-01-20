@@ -18,7 +18,7 @@ body {
 
 .container {
     display: flex;
-    width: 900px;
+    width: 90%;
     background: #1e1c2a;
     border-radius: 12px;
     overflow: hidden;
@@ -27,7 +27,7 @@ body {
 
 /* Left side */
 .left {
-    width: 45%;
+    width: 50%;
     padding: 20px;
     background: #23212e;
     text-align: center;
@@ -35,6 +35,9 @@ body {
 
 .logo img {
     width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 80px;
 }
 
 .bg-image {
@@ -48,7 +51,7 @@ body {
 
 /* Right side */
 .right {
-    width: 55%;
+    width: 50%;
     padding: 30px;
     background: #2d2b3d;
     color: white;
@@ -63,10 +66,18 @@ a {
     text-decoration: none;
 }
 
-.input-group {
+.signup-form {
     display: flex;
+    width: 100%;
+}
+
+.input-group {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
     gap: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .input {
@@ -78,15 +89,16 @@ a {
     color: white;
 }
 
-.password-field {
-    position: relative;
+.pswd-group {
+    display: flex;
+    justify-content: space-around;
 }
 
 .toggle-password {
-    position: absolute;
-    right: 10px;
+    /* position: absolute; */
+    /* right: 10px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     cursor: pointer;
 }
 
@@ -94,6 +106,7 @@ a {
     display: flex;
     align-items: center;
     margin: 10px 0;
+    gap: 5px;
 }
 
 .create-account {
